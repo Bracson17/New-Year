@@ -1,20 +1,22 @@
-# ¿Estás listo para el 2025? 🎉
+# ¿Estás listo para el nuevo año? 🎉
 
-Este proyecto es una página interactiva diseñada para celebrar la llegada del nuevo año. Con un diseño moderno y animaciones llamativas, es perfecta para crear expectativas y compartir entusiasmo con tus amigos y seres queridos.
+Este proyecto es una página interactiva diseñada para celebrar la llegada del año nuevo. Con un diseño moderno, animaciones llamativas y efectos visuales, es perfecta para crear expectativas y compartir entusiasmo con amigos y seres queridos.
 
 ---
 
 ![Fondo del proyecto](./fondo.png)
 
-*(Esta es la imagen utilizada como fondo en el proyecto).*
-
 ---
 
 ## 🌟 Características
 
-- **Animaciones fluidas:** Texto que aparece de manera dinámica con efectos de entrada.
-- **Fondo inmersivo:** Imagen de fondo con un gradiente elegante para un toque moderno.
-- **Diseño centrado:** Contenido perfectamente alineado usando CSS Grid.
+- **Animaciones fluidas:** Texto que aparece de manera dinámica con efectos de entrada y transiciones suaves.
+- **Fondo inmersivo:** Gradiente animado con imagen de fondo y partículas de nieve.
+- **Diseño glassmorphism:** Tarjetas semitransparentes con efecto blur y bordes luminosos.
+- **Cuenta regresiva en tiempo real:** Días, horas, minutos y segundos para el año nuevo.
+- **Barra de progreso anual:** Visualiza el porcentaje del año transcurrido.
+- **Confetti interactivo:** Botón "Celebrar ahora" para lanzar confetti cuando quieras.
+- **Celebración automática:** Al llegar el año nuevo, se activan fuegos artificiales y confetti.
 - **Responsivo:** Se adapta a cualquier tamaño de pantalla, desde móviles hasta escritorios.
 
 ---
@@ -23,9 +25,16 @@ Este proyecto es una página interactiva diseñada para celebrar la llegada del 
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/estas-listo-2025.git
+   git clone https://github.com/tu-usuario/nuevo-ano.git
+   ```
+2. Abre `index.html` en tu navegador.
 
+¡Y listo! 🎊
 
+---
 
+## 🛠️ Tecnologías
 
-
+- HTML5
+- CSS3 (Flexbox, Grid, Animaciones, Glassmorphism)
+- JavaScript (Canvas Confetti, manipulación del DOM)

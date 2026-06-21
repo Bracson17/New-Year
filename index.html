@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cuenta regresiva para el Año Nuevo" />
     <style>
       @font-face {
         font-family: 'Snow For Santa';
@@ -10,41 +11,55 @@
       }
 
       body {
-        font-family: 'Snow For Santa';
+        font-family: 'Snow For Santa', sans-serif;
       }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="2025.ico" type="image/x-icon" />
-    <title>Cuenta atrás año nuevo</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Cuenta atrás — Año Nuevo</title>
   </head>
   <body>
+    <div id="snowflakes" aria-hidden="true"></div>
+
     <main>
       <section class="container-start">
-        <h1>🥳 Cuenta atrás para el 2025 🎉</h1>
-        <h1>Estas listo!  🤙</h1><br>
+        <div class="year-badge" id="yearBadge">2027</div>
+        <h1 class="glow-text">🥳 Cuenta atrás para el <span id="targetYear">2027</span> 🎉</h1>
+        <p class="subtitle">¿Estás listo?</p>
         <div class="countdown">
           <div class="time-block">
-            <span id="days"> 00 </span>
-            <span class="label"> Días </span>
+            <span class="time-value" id="days">00</span>
+            <span class="label">Días</span>
           </div>
           <div class="time-block">
-            <span id="hours"> 00 </span>
-            <span class="label"> Horas </span>
+            <span class="time-value" id="hours">00</span>
+            <span class="label">Horas</span>
           </div>
           <div class="time-block">
-            <span id="minutes"> 00 </span>
-            <span class="label"> Minutos </span>
+            <span class="time-value" id="minutes">00</span>
+            <span class="label">Minutos</span>
           </div>
           <div class="time-block">
-            <span id="seconds"> 00 </span>
-            <span class="label"> Segundos </span>
+            <span class="time-value" id="seconds">00</span>
+            <span class="label">Segundos</span>
           </div>
-        </div><br><br><br><br>
-        <h2>Te desea la familia Antonio Rivera</h2>
+        </div>
+        <div class="progress-container">
+          <div class="progress-label">Progreso del año</div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <div class="progress-text" id="progressText">0%</div>
+        </div>
+        <h2 class="family-message">Te desea la familia Antonio Rivera ❤️</h2>
+        <button class="celebrate-btn" id="celebrateBtn">🎆 Celebrar ahora 🎆</button>
       </section>
+
       <section class="container-end">
-        <h1>🎉 "Brindo por un año lleno de salud, amor y prosperidad para ti y los tuyos. ¡Feliz Año Nuevo!" 🎉</h1>
+        <div class="fireworks-icon">🎉🎊🎆</div>
+        <h1 class="glow-text">"Brindo por un año lleno de salud, amor y prosperidad para ti y los tuyos. ¡Feliz Año Nuevo!"</h1>
+        <h2>🎇 ¡Bienvenido <span id="newYearDisplay">2027</span>! 🎇</h2>
       </section>
     </main>
 
